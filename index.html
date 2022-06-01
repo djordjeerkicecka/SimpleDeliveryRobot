@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Robot Dostavljač</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Delivery Conditions</h1>
+
+        <hr>
+
+        <div class="row">
+            <label for="numberOfDeliveryRuns">How Many Runs Should I Do?</label>
+            <input type="number" name="numberOfDeliveryRuns" id="numberOfDeliveryRuns" min="0" max="10" value="1">
+        </div>
+
+        <div class="row">
+            <label for="numberOfPackages">How Many Packages Are There?</label>
+            <input type="number" name="numberOfPackages" id="numberOfPackages" min="1" max="15" value="5">
+        </div>
+
+        <hr>
+
+        <div class="control-buttons">
+            <a class="btn-form btn-begin" onclick="BeginDelivery()" >Begin</a>
+            <a class="btn-form btn-reset" onclick="ResetConditions()">Reset</a>
+        </div>
+    </form>
+
+    <hr>
+
+    <div id="robot-activity-log">
+        <h1>Hi! I'm the postal robot, Robi! Here is my activity log!</h1>
+        <hr>
+    </div>
+
+
+
+    <!-- Robot JavaScript -->
+    <script src="robot.js"></script>
+</body>
+
+</html>
